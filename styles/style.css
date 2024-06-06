@@ -68,11 +68,16 @@ hr {
   margin-bottom: 1em;
 }
 
+.botao:active {
+  background-color: #167bf7b9;
+  text-transform: lowercase;
+}
+
+
 .botao_primario {
   background-color: var(--cor-terciaria);
   color: var(--cor-primaria);
   border: 2px solid var(--cor-terciaria);
-  
 }
 
 .botao_secundario {
@@ -82,8 +87,9 @@ hr {
 }
 
 .botao_secundario:hover {
-  background-color: #167bf7da;
-  border: 2px solid #167bf7da;
+  background-color: var(--cor-terciaria);
+  border: 2px solid var(--cor-terciaria);
+  transition-delay: 50ms;
 }
 
 .alerta_preco {
