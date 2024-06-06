@@ -240,12 +240,9 @@ hr {
 
 @media (max-width: 1200px) {
 
-  /* hr {
-    display: flex;
-    opacity: 0.5;
-    
-    width: 50vh;
-  } */
+ 
+
+  
 
      /* Parte 1 */
 .container {
@@ -432,6 +429,6 @@ hr {
 @media (min-width:300px) and (max-width:700px) {
   hr {
     opacity: 0.5;
-    width: 100vh;
+   
   }
 }
