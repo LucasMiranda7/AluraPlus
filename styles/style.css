@@ -417,9 +417,8 @@ hr {
 }
 
 
-@media (min-width:300px) and (max-width:600px) {
+@media (min-width:300px) and (max-width:800px) {
   hr {
     opacity: 0.2;
-   width: 60vh;
   }
 }
