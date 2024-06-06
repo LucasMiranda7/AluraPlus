@@ -240,10 +240,6 @@ hr {
 
 @media (max-width: 1200px) {
 
- 
-
-  
-
      /* Parte 1 */
 .container {
   height: 0;
@@ -259,17 +255,15 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-top: 17em; */
 }
   
 .titulo {
-  font-size: 30px;
-  width: 50vh;
+  font-size: 28px;
+  width: 40vh;
 }
 
 .imagem_ilustrativa {
-  /* margin: 1em 0 2em 0; */
-  width: 40vh;
+  width: 30vh;
 }
     
 .botao {
@@ -291,10 +285,7 @@ hr {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 22em 0 3em 0;
-  /* margin-top: 10em ;
-  margin-bottom: 10em; */
-
+  margin: 25em 0 3em 0;
 }
 
 .conteiner_descricao {
@@ -426,9 +417,9 @@ hr {
 }
 
 
-@media (min-width:300px) and (max-width:700px) {
+@media (min-width:300px) and (max-width:600px) {
   hr {
-    opacity: 0.5;
-   
+    opacity: 0.2;
+   width: 60vh;
   }
 }
