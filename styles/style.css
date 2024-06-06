@@ -1,0 +1,421 @@
+@charset "UTF-8";
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+  --cor-primaria: #FFFFFF;
+  --cor-secundaria: #C0C0C0;
+  --cor-terciaria: #167BF7;
+  --cor-de-fundo: #00030C;
+  --font-principal: "Inter", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--font-principal);
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--cor-primaria);
+  box-sizing: border-box;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+hr {
+  opacity: 0;
+}
+
+.principal{
+  background-image: url(../Imagens/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center; 
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%; 
+}
+
+.container_conteudo {
+  margin: 0 6em;
+}
+
+.titulo {
+  margin-top: 5em;
+  padding-bottom: 1.2em;
+  font-weight: 700;
+}
+
+.imagem_ilustrativa {
+  margin: 1em 0 2em 0;
+  width: 577px;
+}
+
+.botao {
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  display: block;
+  padding: 1.5em;
+  margin-bottom: 1em;
+}
+
+.botao_primario {
+  background-color: var(--cor-terciaria);
+  color: var(--cor-primaria);
+  border: 2px solid var(--cor-terciaria);
+  
+}
+
+.botao_secundario {
+  background-color: transparent;
+  color: var(--cor-primaria);
+  border: 1px solid var(--cor-primaria);
+}
+
+.botao_secundario:hover {
+  background-color: #167bf7da;
+  border: 2px solid #167bf7da;
+}
+
+.alerta_preco {
+  font-size: 12px;
+  color: var(--cor-secundaria);
+}
+
+           /* Parte 2 */
+
+.container_segundario {
+  display: grid;
+  grid-template-columns: 50% 50%; 
+  align-items: center;
+}
+
+
+.imagem_plataforma {
+  margin: 0 auto;
+  width: 600px;
+}
+
+
+.subtitulo_container {
+  text-align: justify;
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.paragrafo_conteiner {
+  color: var(--cor-secundaria);
+  font-size: 16px;
+  width: 588px;
+}
+
+
+/* Parte 3 */
+
+.container_terceiro {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.conteiner_combo {
+    margin: 0 auto;
+}
+
+.paragrafo_combo {
+  color: var(--cor-secundaria);
+  font-size: 16px;
+  width: 588px;
+  padding: 1em;
+}
+
+.botao_combo {
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 16px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.imagem_tela {
+  margin-left: 4em;
+  width: 600px;
+}
+
+/* Parte 4*/
+
+.container_quarto {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.imagem_cursos {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.titulo_cursos {
+  font-size: 48px;
+  font-weight: 700;
+  padding-bottom: 8px;
+}
+
+.descricao_cursos {
+  color: var(--cor-secundaria);
+  font-size: 16px;
+  width: 588px;
+}
+
+/* Parte 5 */
+
+.conteiner_quinto {
+  margin: 12%;
+}
+
+.subtitulo_dispositivos {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.lista_dispositivos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 2.5em;
+  text-align: center;
+  list-style-type: none;
+}
+
+
+/* Rodapé */
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.informacoes {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 16px;
+}
+
+.info_links {
+  color: var(--cor-secundaria);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.copyright {
+  color: var(--cor-secundaria);
+  font-size: 14px;
+  width: 1200px;
+}
+
+
+@media (max-width: 1200px) {
+
+  hr {
+    opacity: 0.5;
+    margin: 20px 20px;
+    width: 650px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .container_conteudo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .titulo {
+    padding-top: 4em;
+    font-size: 30px;
+    width: 400px;
+    font-weight: 700;
+  }
+  
+  .imagem_ilustrativa {
+    width: 400px;
+  }
+
+  .botao {
+    font-size: 12px;
+  }
+  
+  .alerta_preco {
+    font-size: 10px;
+    color: var(--cor-secundaria);
+  }
+
+
+    /* Parte 2 */
+
+  .container_segundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .conteiner_descricao {
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .imagem_plataforma {
+    width: 300px;
+  }
+  
+  .subtitulo_container {
+    font-size: 38px;
+    font-weight: 700;
+  }
+  
+  .paragrafo_conteiner {
+    color: var(--cor-secundaria);
+    font-size: 14px;
+    width: 450px;
+  }
+
+  /* Parte 3 */
+
+.container_terceiro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 2em;
+  }
+  
+.conteiner_combo {
+  display: block;
+  }
+  
+.paragrafo_combo {
+  color: var(--cor-secundaria);
+  font-size: 12px;
+  width: 420px;
+  padding: 2em;
+  }
+  
+  .botao_combo {
+    font-size: 14px;
+    padding: 14px;
+  }
+  
+.imagem_tela {
+  padding: 2em 4em 3em 0;
+  width: 400px;
+  }
+
+
+  /* Parte 4 */
+
+.container_quarto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+
+.container_cursos{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imagem_cursos {
+  width: 400px;
+  padding-bottom: 2em;
+  }
+  
+.titulo_cursos {
+  font-size: 36px;
+  }
+
+  
+.descricao_cursos {
+  margin-bottom: 5em;
+  color: var(--cor-secundaria);
+  font-size: 16px;
+  width: 400px;
+  }
+
+  /* Parte 5 */
+
+.subtitulo_dispositivos {
+  font-size: 32px; 
+  }
+
+.lista_dispositivos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5em;
+}
+
+   /* Rodapé */
+
+ .rodape {
+  margin-top: 2em;
+}
+
+.informacoes {
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+  gap: 30px;
+  }
+ 
+
+.info_links {
+  font-size: 12px;
+  text-decoration: none; 
+  }
+
+.copyright {
+  font-size: 10px;
+  width: 420px;
+  margin-bottom: 3em;
+}
+}
+
+
