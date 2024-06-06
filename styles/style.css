@@ -240,77 +240,87 @@ hr {
 
 @media (max-width: 1200px) {
 
-  hr {
+  /* hr {
+    display: flex;
     opacity: 0.5;
-    margin: 20px 20px;
-    width: 650px;
-  }
+    
+    width: 50vh;
+  } */
 
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+     /* Parte 1 */
+.container {
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+    
+.container_conteudo {
+  margin: 17em 0 0 0 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 17em; */
+}
   
-  .container_conteudo {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .titulo {
-    padding-top: 4em;
-    font-size: 30px;
-    width: 400px;
-    font-weight: 700;
-  }
-  
-  .imagem_ilustrativa {
-    width: 400px;
-  }
+.titulo {
+  font-size: 30px;
+  width: 50vh;
+}
 
-  .botao {
-    font-size: 12px;
-  }
-  
-  .alerta_preco {
-    font-size: 10px;
-    color: var(--cor-secundaria);
-  }
+.imagem_ilustrativa {
+  /* margin: 1em 0 2em 0; */
+  width: 40vh;
+}
+    
+.botao {
+  font-size: 12px;
+  text-align: center;
+  padding: 1.5em;
+  width: 20vh;
+}
 
+ .alerta_preco {
+  font-size: 10px;
+  color: var(--cor-secundaria);
+  }
 
     /* Parte 2 */
 
-  .container_segundario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 40px;
-  }
+.container_segundario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 22em 0 3em 0;
+  /* margin-top: 10em ;
+  margin-bottom: 10em; */
 
-  .conteiner_descricao {
-    margin-bottom: 2em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+
+.conteiner_descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.imagem_plataforma {
+  width: 300px;
   }
   
-  .imagem_plataforma {
-    width: 300px;
-  }
-  
-  .subtitulo_container {
-    font-size: 38px;
-    font-weight: 700;
-  }
-  
-  .paragrafo_conteiner {
-    color: var(--cor-secundaria);
-    font-size: 14px;
-    width: 450px;
-  }
+.subtitulo_container {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.paragrafo_conteiner {
+  color: var(--cor-secundaria);
+  font-size: 14px;
+  width: 450px;
+}
 
   /* Parte 3 */
 
@@ -419,3 +429,9 @@ hr {
 }
 
 
+@media (min-width:300px) and (max-width:700px) {
+  hr {
+    opacity: 0.5;
+    width: 100vh;
+  }
+}
