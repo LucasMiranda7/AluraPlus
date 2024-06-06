@@ -6,8 +6,6 @@
 
 <style>
   .mobile {
-    display:flex;
-    justify-content: center;
     align-itens: center;
   }
 </style>
